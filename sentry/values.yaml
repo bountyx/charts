@@ -252,7 +252,7 @@ slack: {}
 #   legacyApp:
 
 nginx:
-  enabled: true
+  enabled: false
   containerPort: 8080
   existingServerBlockConfigmap: sentry-nginx
   resources: {}
@@ -262,7 +262,7 @@ nginx:
     port: 80
 
 ingress:
-  enabled: false
+  enabled: true
   # annotations:
   #   kubernetes.io/tls-acme:
   #   certmanager.k8s.io/issuer:
